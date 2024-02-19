@@ -4,8 +4,21 @@
     text-decoration: none;
 }
 
-body{
-    background-color: red;
+body {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+}
+
+section {
+    background-image: url('images/transparent_background2.png');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header{
@@ -28,8 +41,9 @@ header{
 .navlist a{
     color:white;
     margin-left:60px;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
     border-bottom:2px solid transparent;
     transition:all .55s ease;
 }
@@ -44,3 +58,4 @@ header{
     z-index: 100001;
     cursor:pointer;
 }
+
