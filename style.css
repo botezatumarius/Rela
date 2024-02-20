@@ -11,7 +11,18 @@ body {
     background-color: black;
 }
 
-section {
+#about_section{
+    margin-top: 150px;
+    height: 800px;
+    text-align: left;
+    line-height: 1.5;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-right:200px;
+    margin-left:200px;
+}
+
+#title_section {
     background-image: url('images/transparent_background2.png');
     background-size: cover;
     background-position: center;
@@ -22,7 +33,7 @@ section {
 }
 
 header{
-    position:fixed;
+    position:absolute;
     right:0;
     top:0;
     z-index:1000;
@@ -36,6 +47,10 @@ header{
 
 .navlist{
     display:flex;
+}
+
+.centered_element{
+    text-align: center;
 }
 
 .navlist a{
