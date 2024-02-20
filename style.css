@@ -11,15 +11,27 @@ body {
     background-color: black;
 }
 
+section{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    line-height:1.5;
+    text-align: left;
+}
+
+#past_events_section{
+    margin-left: 200px;
+    margin-right:200px;
+    height:400px;
+    text-align: center;
+}
+
 #about_section{
     margin-top: 150px;
-    height: 800px;
-    text-align: left;
-    line-height: 1.5;
+    height: 500px;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
     margin-right:200px;
     margin-left:200px;
+    border-bottom: 1px solid white;
 }
 
 #title_section {
@@ -30,7 +42,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-attachment: fixed;
 }
+
 
 header{
     position:absolute;
@@ -43,6 +57,22 @@ header{
     justify-content: space-between;
     padding: 33px 9%;
     background: transparent;
+}
+
+.button-container {
+    margin-top: 20px; 
+    font-family: 'future-pt';
+}
+
+.year-button {
+    display: inline-block; /* Make buttons display horizontally */
+    padding: 20px 30px; /* Add padding for better visual appearance */
+    margin: 0 10px; /* Add margin between buttons */
+    background-color: black; /* Set background color to white */
+    color: white; /* Set text color to black */
+    border: 2px solid white; /* Add a black border around each button */
+    text-decoration: none; /* Remove default link underline */
+    font-size: 17px; /* Adjust font size as needed */
 }
 
 .navlist{
