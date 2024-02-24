@@ -38,7 +38,8 @@ section{
 
 #about_section{
     margin-top: 150px;
-    height: 500px;
+    height: 700px;
+    font-size: 20px;
     color: white;
     margin-right:200px;
     margin-left:200px;
@@ -62,6 +63,7 @@ section{
 
 
 header{
+    animation:fade-up 0.5s;
     position:absolute;
     right:0;
     top:0;
@@ -144,6 +146,10 @@ header{
     cursor:pointer;
 }
 
+#title{
+    animation:fade-up 0.5s;
+}
+
 #gallery_images {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -184,8 +190,7 @@ header{
     margin-left: 200px;
     margin-right: 200px;
     display:grid;
-    grid-template-columns: 1fr;
-    height:500px;
+    height:700px;
     justify-content: center;
     align-items: center;
 }
@@ -194,23 +199,25 @@ header{
     margin-top: 60px;
     display:flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 70px;
     border-bottom: 2px solid white;
 }
 
 .general_inquiries, .general_inquiries_text{
-    display:inline-block;
+    display: inline-block;
 }
 
 .general_inquiries{
     font-size:30px;
-    width:400px;
+    width:300px;
+    box-sizing: border-box;
     font-weight: 900;
 }
 
 .general_inquiries_text{
+    flex:1;
     font-size:25px;
     margin-left: 50px;
 }
@@ -233,6 +240,18 @@ header{
 #maps_location{
     filter: grayscale(100%);
     margin-left:150px;
+}
+
+@keyframes fade-up{
+    0% {
+        opacity:0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    100%{
+        opacity:1;
+        transform:translateY(0px) scale(1);
+    }
 }
 
 
