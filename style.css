@@ -28,7 +28,7 @@ section{
 #gallery_section{
     margin-left: 200px;
     margin-right:200px;
-    margin-bottom:200px;
+    margin-bottom:180px;
 }
 
 #about_section{
@@ -38,6 +38,10 @@ section{
     margin-right:200px;
     margin-left:200px;
     border-bottom: 1px solid white;
+}
+
+#contact_section{
+    margin-bottom: 500px;
 }
 
 #title_section {
@@ -87,14 +91,23 @@ header{
     color: black;
 }
 
-#gallery_title{
+#gallery_title,#contact_title{
     font-size: 80px;
     display:flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Annapurna SIL';
     height:400px;
     background-color: rgba(41, 22, 28, 0.4);
-    margin-bottom:120px
+    margin-bottom:120px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#contact_title{
+    background-image: url('images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .navlist{
@@ -136,4 +149,25 @@ header{
     max-width: 100%;
     height: auto;
 }
+
+#contact{
+    background-color: rgba(71, 54, 54, 0.2);
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    height:400px;
+    align-items: center;
+}
+
+#contact_info{
+    display:inline-block;
+    font-family: 'Suranna', 'Courier New', monospace;
+    font-size: 25px;
+}
+
+#maps_location{
+    filter: grayscale(100%);
+    margin-left:150px;
+}
+
 
