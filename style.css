@@ -42,7 +42,7 @@ textarea::placeholder {
 }
 
 #dj_button {
-    background-color: black; 
+    background-color: rgba(79, 15, 15, 0.8); 
     color: white;
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
