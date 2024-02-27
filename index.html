@@ -20,6 +20,7 @@
             <li><a href="#gallery_section">Gallery</a></li>
             <li><a href="#contact_section">Contact</a></li>
             <li><a href="#location_section">Location</a></li>
+            <li><a href="#dj_booking_form">DJ Booking</a></li>
         </ul>
 
     </header>
@@ -76,10 +77,39 @@
           <div class = "general_inquiries">VENUE BOOKING</div>
           <div class="general_inquiries_text">To book a venue please call us at + 0611 786 74. </br>Types of venue bookings can include film wrap parties, film shoot locations, and parties of over 100 people.  </div>
         </div>
-        <div class = "general_section">
-          <div class = "general_inquiries">DJ BOOKING REQUESTS</div>
-          <div class="general_inquiries_text">DJ’s and Agents: Call us on our business phone for requests: </br>+ 0789 213 12.  </div>
-        </div>
+        <div class="general_section" id = "dj_booking_form">
+          <div class="general_inquiries">DJ BOOKING REQUESTS</div>
+          <div class="general_inquiries_text">
+              <form>
+                  <label for="first_name">First Name:</label>
+                  <input type="text" id="first_name" name="first_name" placeholder="Your first name..">
+                
+                  <label for="last_name">Last Name:</label>
+                  <input type="text" id="last_name" name="last_name" placeholder="Your last name..">
+                
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Your email..">
+               
+                  <label for="mix_submission">Please submit a mix for our consideration:</label>
+               
+                  <input type="file" id="mix_submission" name="mix_submission" accept=".mp3, .wav">
+               
+                  <label for="years_djing">Number of Years DJing:</label>
+                  <input type="number" id="years_djing" name="years_djing" placeholder="Nr years you've been djing..">
+                  
+                  <label for="city">City You're From:</label>
+                  <input type="text" id="city" name="city" placeholder="Your city..">
+                  
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="4" cols="100" placeholder="Any additional info.."></textarea>
+              </form>
+              </br>
+              <div style="display:flex;align-items: center; justify-content: center;">
+                <input type="submit" value="Submit" class="submit_button">
+              </div>
+          </div>
+      </div>
+      
       </div>
     </section>
 

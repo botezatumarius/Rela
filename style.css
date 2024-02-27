@@ -22,6 +22,25 @@ section{
     text-align: left;
 }
 
+input,textarea{
+    font-size: 20px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #0b0e0b; 
+    color: #fff; 
+    border: 2px solid #dbe3db; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999; 
+    font-size: 20px;
+    padding:5px;
+}
+
 #past_events_section{
     margin-left: 200px;
     margin-right:200px;
@@ -76,9 +95,41 @@ header{
     background: transparent;
 }
 
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+
 .button-container {
     margin-top: 20px; 
     font-family: 'future-pt';
+}
+
+.submit_button {
+    width:100px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0b0e0b; 
+    color: #fff; 
+    border: 2px solid #dbe3db; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.submit_button:hover {
+    background-color: #fff; 
+    color: #0b0e0b; 
 }
 
 .year-button {
@@ -190,7 +241,7 @@ header{
     margin-left: 200px;
     margin-right: 200px;
     display:grid;
-    height:700px;
+    height:1300px;
     justify-content: center;
     align-items: center;
 }
