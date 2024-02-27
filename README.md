@@ -2,7 +2,7 @@
 
 ## Rela Night Club
 
-A landing page for a fictitious night club residing in Chisinau, Moldova.
+A landing page for a fictitious night club located in Chisinau, Moldova.
 
 ### Screenshots
 
