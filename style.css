@@ -310,16 +310,7 @@ label{
     filter: grayscale(100%);
     margin-left:calc((150 / 1920) * 100vw); 
     margin-top: 20px;
-}
-
-#mascot {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 120px; 
-    opacity: 0;
-    animation: mascot-appear 0.5s ease-out 3s forwards, moveUpDown 5s ease-in-out infinite;
-    filter: drop-shadow(0 0 5px white);
+    z-index:100;
 }
 
 #image_container {
@@ -329,11 +320,28 @@ label{
     width: 120px; 
     opacity: 0;
     animation: mascot-appear 0.5s ease-out 3s forwards, moveUpDown 5s ease-in-out infinite;
+    z-index: 999;
+}
+
+#hover_message {
+    opacity:0;
+    background-color: black;
+    color: rgb(201, 193, 193);
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 10px;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    transition-duration: 0.5s;
+}
+
+#mascot {
+    width:120px;
     filter: drop-shadow(0 0 5px white);
 }
 
-
-#mascot-container:hover .mascot-message {
+#image_container:hover #hover_message {
     opacity: 1; 
 }
 
