@@ -303,13 +303,13 @@ label{
     display:flex;
     flex-direction: row;
     justify-content:center;
-    height:400px;
     align-items: center;
 }
 
 #maps_location{
     filter: grayscale(100%);
-    margin-left:150px;
+    margin-left:calc((150 / 1920) * 100vw); 
+    margin-top: 20px;
 }
 
 @keyframes fade-up{
@@ -468,4 +468,16 @@ label{
     }
 }
 
+@media (max-width:995px){
+    #location{
+        flex-direction: column;
+    }
+    #maps_location{
+        margin-left: 0;
+    }
+
+    #location_info{
+        margin-top: 20px;
+    }
+}
 
