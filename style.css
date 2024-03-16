@@ -22,6 +22,15 @@ section{
     text-align: left;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
 input,textarea{
     font-size: 20px;
     width: 100%;
@@ -44,7 +53,7 @@ textarea::placeholder {
 #dj_button {
     background-color: rgba(79, 15, 15, 0.8); 
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Raleway,'Courier New', Courier, monospace;
     padding: 10px 20px;
     border: 2px solid white;
     border-radius: 5px;
@@ -328,7 +337,7 @@ label{
     }
 
     #dj_button{
-        font-size: 2.5vw;
+        font-size: 5vw;
         padding:5px 10px;
     }
     
@@ -344,4 +353,40 @@ label{
         font-size: 1.5vw;
     }
     
+}
+
+@media (max-width:720px){
+
+    #menu-icon {
+        display: block;
+    }
+
+    li{
+        margin:0;
+        margin-top: 5px;
+    }
+
+    .navlist {
+        display: none;
+        flex-direction: column;
+        padding: 10px;
+        position: absolute;
+        background-color: rgba(11, 14, 11, 0.4);
+        align-items: flex-start;
+        top: 60px;
+        margin-top: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+        margin-left: -8px;
+    }
+
+    .navlist a{
+        margin:0;
+        font-size: 5vw;
+        
+    }
+
+    #menu-toggle:checked + .navlist {
+        display: flex;
+    }
 }
