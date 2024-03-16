@@ -127,7 +127,6 @@ form{
 }
 
 label{
-    display: block;
     margin-bottom: 5px;
 }
 
@@ -263,18 +262,14 @@ label{
 }
 
 #contact{
-    margin-left: 200px;
-    margin-right: 200px;
-    display:grid;
-    height:1300px;
-    justify-content: center;
-    align-items: center;
+    margin-right: calc((200 / 1920) * 100vw); 
+    margin-left: calc((200 / 1920) * 100vw);
+  
 }
 
 .general_section{
     margin-top: 60px;
     display:flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 70px;
@@ -288,7 +283,6 @@ label{
 .general_inquiries{
     font-size:30px;
     width:300px;
-    box-sizing: border-box;
     font-weight: 900;
 }
 
@@ -423,6 +417,20 @@ label{
     }
 }
 
+@media (max-width: 280px) {
+    #gallery_images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+    
+    #gallery_images img:nth-child(n+7) {
+        display: none;
+    }
+
+    
+}
+
 @media (max-width: 400px) {
     #gallery_title,#contact_title{
         font-size: 50px;
@@ -432,6 +440,31 @@ label{
 @media (max-width: 260px) {
     #gallery_title,#contact_title{
         font-size: 30px;
+    }
+    .general_inquiries_text{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 616px){
+    .general_section{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 615px){
+    .general_section{
+        flex-direction: column;
+        text-align: center;
+    }
+    .general_inquiries_text{
+        margin:0;
+    }
+}
+
+@media (max-width:1290px){
+    form{
+        grid-template-columns: 1fr;
     }
 }
 
