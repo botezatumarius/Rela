@@ -82,11 +82,11 @@ textarea::placeholder {
 
 #about_section{
     margin-top: 150px;
-    height: 700px;
     font-size: 20px;
     color: white;
-    margin-right:200px;
-    margin-left:200px;
+    margin-right: calc((200 / 1920) * 100vw); 
+    margin-left: calc((200 / 1920) * 100vw);
+    text-align: justify;
     border-bottom: 1px solid white;
 }
 
