@@ -74,10 +74,8 @@ textarea::placeholder {
 }
 
 #gallery_section{
-    margin-top: 50px;
     margin-right: calc((200 / 1920) * 100vw); 
     margin-left: calc((200 / 1920) * 100vw);
-    margin-bottom:180px;
 }
 
 #about_section{
@@ -168,7 +166,7 @@ label{
     color: black;
 }
 
-#gallery_title,#contact_title{
+#contact_title{
     font-size: 80px;
     display:flex;
     align-items: center;
@@ -218,18 +216,6 @@ label{
 
 #title{
     animation:fade-up 0.5s;
-}
-
-#gallery_images {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-}
-
-#gallery_images img {
-    max-width: 100%;
-    height: auto;
-    transition: .2s;
 }
 
 #gallery_images img:hover{
