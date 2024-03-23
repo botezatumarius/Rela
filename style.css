@@ -167,14 +167,6 @@ label{
 }
 
 #contact_title{
-    font-size: 80px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Annapurna SIL';
-    height:400px;
-    background-color: rgba(41, 22, 28, 0.4);
-    margin-bottom:120px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
