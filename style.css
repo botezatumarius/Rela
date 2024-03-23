@@ -81,13 +81,8 @@ textarea::placeholder {
 }
 
 #about_section{
-    margin-top: 150px;
-    font-size: 20px;
-    color: white;
     margin-right: calc((200 / 1920) * 100vw); 
     margin-left: calc((200 / 1920) * 100vw);
-    text-align: justify;
-    border-bottom: 1px solid white;
 }
 
 #contact_section{
